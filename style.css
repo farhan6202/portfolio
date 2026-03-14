@@ -1195,3 +1195,56 @@ font-size:16px;
 }
 
 }
+/* =========================
+PHONE MENU ONLY
+========================= */
+
+.menu-btn{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:white;
+}
+
+/* only phone */
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+.menu{
+
+position:fixed;
+top:0;
+right:-100%;
+
+width:70%;
+height:100vh;
+
+background:rgba(0,0,0,.95);
+backdrop-filter:blur(10px);
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+gap:25px;
+
+transition:.4s;
+}
+
+.menu.active{
+right:0;
+}
+
+.menu a{
+font-size:20px;
+}
+
+nav{
+padding:15px 20px;
+}
+
+}
