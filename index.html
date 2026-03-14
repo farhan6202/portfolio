@@ -532,5 +532,23 @@ if (bg) {
 }
 
 </script>
+   <script>
+
+const menuBtn = document.getElementById("menuBtn");
+const menu = document.getElementById("menu");
+
+menuBtn.addEventListener("click", () => {
+
+menu.classList.toggle("active");
+
+if(menuBtn.innerHTML == "☰"){
+menuBtn.innerHTML = "✖";
+}else{
+menuBtn.innerHTML = "☰";
+}
+
+});
+
+</script>
 </body>
 </html>
