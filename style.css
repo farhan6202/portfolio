@@ -989,31 +989,7 @@ z-index:-2;
 }
 
 
-/* ---------- cursor glow ---------- */
 
-.cursor{
-
-position:fixed;
-
-width:18px;
-height:18px;
-
-border-radius:50%;
-
-background:#ff7a00;
-
-pointer-events:none;
-
-transform:translate(-50%,-50%);
-
-box-shadow:
-0 0 10px #ff7a00,
-0 0 25px #ff7a00,
-0 0 40px rgba(255,120,0,.6);
-
-z-index:9999;
-
-}
 
 
 /* ---------- reveal animation ---------- */
@@ -1093,6 +1069,7 @@ z-index:99999;
 
 }
 
+
 .loader h1{
 
 color:#ff7a00;
@@ -1106,5 +1083,88 @@ animation:pulse 1s infinite;
 0%{opacity:.3}
 50%{opacity:1}
 100%{opacity:.3}
+
+}
+/* =========================
+MOBILE RESPONSIVE FIX
+========================= */
+
+@media(max-width:900px){
+
+nav{
+padding:15px 20px;
+flex-direction:column;
+gap:10px;
+}
+
+.menu{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero{
+flex-direction:column;
+padding:40px 20px;
+text-align:center;
+}
+
+.left h1{
+font-size:32px;
+}
+
+.hero-name{
+font-size:28px;
+}
+
+.right h2{
+font-size:16px;
+}
+
+.tags{
+justify-content:center;
+}
+
+.skills-grid,
+.soft-grid,
+.project-grid,
+.why-grid{
+grid-template-columns:1fr;
+}
+
+.about-container{
+flex-direction:column;
+}
+
+.about-left h2{
+font-size:26px;
+}
+
+section{
+padding:60px 20px;
+}
+
+.project-card{
+height:300px;
+}
+
+}
+@media(max-width:500px){
+
+.left h1{
+font-size:26px;
+}
+
+.hero-name{
+font-size:22px;
+}
+
+section h1{
+font-size:26px;
+}
+
+.resume-btn{
+padding:10px 16px;
+}
 
 }
