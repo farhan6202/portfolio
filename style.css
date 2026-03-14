@@ -1248,3 +1248,31 @@ padding:15px 20px;
 }
 
 }
+/* ===== EMAIL FIX ===== */
+
+.contact-box{
+max-width:90%;
+margin:auto;
+word-wrap:break-word;
+overflow-wrap:break-word;
+}
+
+.contact-box a{
+word-break:break-all;
+font-size:18px;
+display:block;
+}
+
+/* phone only */
+
+@media(max-width:600px){
+
+.contact-box{
+padding:20px;
+}
+
+.contact-box a{
+font-size:16px;
+}
+
+}
